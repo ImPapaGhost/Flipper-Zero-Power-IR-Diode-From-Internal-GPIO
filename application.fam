@@ -1,0 +1,17 @@
+# For details & more options, see documentation/AppManifests.md in firmware repo
+
+App(
+    appid="lightgun_app",  # Must be unique
+    name="Lightgun",  # Displayed in menus
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="lightgun_app_main",
+    stack_size=2 * 1024,
+    fap_category="infrared",
+    # Optional values
+    fap_version="0.1",
+    fap_icon="lightgun_app.png",  # 10x10 1-bit PNG
+    fap_description="An app that turns your Flipper Zero into a lightgun.",
+    fap_author="Papa_Ghost",
+    # fap_weburl="https://github.com/ImPapaGhost/lightgun_app",
+    fap_icon_assets="images",  # Image assets to compile for this application
+)
